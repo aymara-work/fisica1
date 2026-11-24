@@ -3,19 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Banco Oficial de 40 tarjetas de Evaluación Oral Integradora de Física I. Vista del estudiante y vista del tribunal. UTN Facultad Regional San Rafael.">
+<meta name="description" content="Banco Oficial de 53 tarjetas de Evaluación Oral Integradora de Física I. Vista del estudiante y vista del tribunal. UTN Facultad Regional San Rafael.">
 <meta name="author" content="Cátedra de Física I — Departamento de Materias Básicas — UTN Facultad Regional San Rafael">
 <meta property="og:title" content="Examen Final Oral Integrador — Física I">
-<meta property="og:description" content="Banco Oficial de 40 tarjetas de Evaluación Oral Integradora. Vista del estudiante y vista del tribunal.">
+<meta property="og:description" content="Banco Oficial de 53 tarjetas de Evaluación Oral Integradora. Vista del estudiante y vista del tribunal.">
 <meta property="og:type" content="website">
-<style>
-  *,*::before,*::after{box-sizing:border-box}
-  html{color-scheme:light dark}
-  body{margin:0;font:14px system-ui,-apple-system,"Segoe UI",sans-serif}
-  img{max-width:100%}
-  [hidden]{display:none!important}
-</style>
-<title>Examen Integrador Física I</title>
+<title>Examen Final Oral Integrador — Física I</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 
 <style>
@@ -27,9 +20,10 @@
   --steel:#2B3A47; --steel-soft:#E4E8EC;
   --focus:#2B6CB0;
   --eje:#2B3A47; --eje-wash:#EEF1F4;
-  --A:#2E5C8A; --A-w:#E9EFF6; --B:#3D7A54; --B-w:#E9F2EC; --C:#8F6B12; --C-w:#F5EFDD;
-  --D:#AC5420; --D-w:#F7EAE1; --E:#6B5040; --E-w:#F1EBE5; --F:#5E4386; --F-w:#EEE9F4;
-  --T:#8D2729; --T-w:#F6E7E7;
+  --fam-P:#45709C; --fam-P-w:#EAEFF5; --fam-K:#004F48; --fam-K-w:#E2EDEB;
+  --fam-X:#855800; --fam-X-w:#F3EBDC; --fam-M:#5D317F; --fam-M-w:#EEE9F3;
+  --fam-I:#6E0C14; --fam-I-w:#F4E6E7;
+  --T:var(--fam-I);
   --f-display:"Source Serif 4",Georgia,"Times New Roman",serif;
   --f-sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
@@ -43,9 +37,9 @@
     --steel:#C9D2DA; --steel-soft:#242B33;
     --focus:#7FB0E0;
     --eje:#C9D2DA; --eje-wash:#222830;
-    --A:#82ACD6; --A-w:#1B242E; --B:#7CBC93; --B-w:#18241C; --C:#D6B45E; --C-w:#262015;
-    --D:#E09A6A; --D-w:#2A1E16; --E:#C3A38A; --E-w:#231C17; --F:#B197D5; --F-w:#211B2C;
-    --T:#DF8E8E; --T-w:#2A1A1A;
+    --fam-P:#4A76A2; --fam-P-w:#1A222B; --fam-K:#63B4AB; --fam-K-w:#16221F;
+    --fam-X:#F2C064; --fam-X-w:#27200F; --fam-M:#CA9CF3; --fam-M-w:#221B2B;
+    --fam-I:#B65350; --fam-I-w:#261817;
     --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
   }
 }
@@ -56,9 +50,9 @@
   --steel:#C9D2DA; --steel-soft:#242B33;
   --focus:#7FB0E0;
   --eje:#C9D2DA; --eje-wash:#222830;
-  --A:#82ACD6; --A-w:#1B242E; --B:#7CBC93; --B-w:#18241C; --C:#D6B45E; --C-w:#262015;
-  --D:#E09A6A; --D-w:#2A1E16; --E:#C3A38A; --E-w:#231C17; --F:#B197D5; --F-w:#211B2C;
-  --T:#DF8E8E; --T-w:#2A1A1A;
+  --fam-P:#4A76A2; --fam-P-w:#1A222B; --fam-K:#63B4AB; --fam-K-w:#16221F;
+  --fam-X:#F2C064; --fam-X-w:#27200F; --fam-M:#CA9CF3; --fam-M-w:#221B2B;
+  --fam-I:#B65350; --fam-I-w:#261817;
   --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
 }
 
@@ -73,13 +67,12 @@ body{
 @media (prefers-reduced-motion: reduce){*{animation:none!important; transition:none!important}}
 
 /* eje scoping */
-[data-eje="A"]{--eje:var(--A); --eje-wash:var(--A-w)}
-[data-eje="B"]{--eje:var(--B); --eje-wash:var(--B-w)}
-[data-eje="C"]{--eje:var(--C); --eje-wash:var(--C-w)}
-[data-eje="D"]{--eje:var(--D); --eje-wash:var(--D-w)}
-[data-eje="E"]{--eje:var(--E); --eje-wash:var(--E-w)}
-[data-eje="F"]{--eje:var(--F); --eje-wash:var(--F-w)}
-[data-eje="T"]{--eje:var(--T); --eje-wash:var(--T-w)}
+/* el color identifica la familia temática; la letra identifica el eje */
+[data-eje="A"],[data-eje="B"]{--eje:var(--fam-P); --eje-wash:var(--fam-P-w)}
+[data-eje="C"],[data-eje="D"]{--eje:var(--fam-K); --eje-wash:var(--fam-K-w)}
+[data-eje="E"],[data-eje="G"]{--eje:var(--fam-X); --eje-wash:var(--fam-X-w)}
+[data-eje="F"],[data-eje="H"]{--eje:var(--fam-M); --eje-wash:var(--fam-M-w)}
+[data-eje="T"]{--eje:var(--fam-I); --eje-wash:var(--fam-I-w)}
 
 /* ─────────────── header ─────────────── */
 header.masthead{border-bottom:1px solid var(--rule); background:var(--surface)}
@@ -178,6 +171,22 @@ button{font:inherit; cursor:pointer; border-radius:3px}
 .pasos-exp .d{
   font-family:var(--f-mono); font-size:11.5px; color:var(--muted); white-space:nowrap;
   font-variant-numeric:tabular-nums;
+}
+
+/* encabezados de familia */
+.famhead{
+  display:flex; align-items:center; gap:9px; margin:18px 0 8px;
+  font-family:var(--f-mono); font-size:10px; letter-spacing:.13em; text-transform:uppercase;
+  font-weight:600; color:var(--eje);
+}
+.famhead:first-child{margin-top:0}
+.famhead .famrail{width:22px; height:3px; background:var(--eje); border-radius:1px; flex:none}
+.ejes-exp .famsep{padding-top:16px; padding-bottom:4px}
+.ejes-exp .famsep:first-child{padding-top:0}
+.ejes-exp .famsep .rail{background:none}
+.ejes-exp .famsep .nm{
+  font-family:var(--f-mono); font-size:10px; letter-spacing:.13em; text-transform:uppercase;
+  font-weight:600; color:var(--eje); padding-left:11px;
 }
 
 /* composición del banco */
@@ -431,8 +440,7 @@ footer .sig{font-family:var(--f-mono); font-size:10.5px; letter-spacing:.06em; t
   .chips{grid-template-columns:1fr}
 }
 </style>
-</head>
-<body>
+
 <header class="masthead">
   <div class="wrap">
     <div class="inst">
@@ -442,7 +450,7 @@ footer .sig{font-family:var(--f-mono); font-size:10.5px; letter-spacing:.06em; t
       <span>Cátedra Física I</span>
     </div>
     <h1>Examen Final Oral Integrador</h1>
-    <p class="subtitle">Dispositivo de consulta del Banco Oficial de 40 Tarjetas de Evaluación Integradora. Una misma tarjeta, dos vistas: lo que recibe el estudiante y lo que conduce el tribunal. <em>Anexo I y II — Proyecto institucional 2026.</em></p>
+    <p class="subtitle">Dispositivo de consulta del Banco Oficial de 53 Tarjetas de Evaluación Integradora. Una misma tarjeta, dos vistas: lo que recibe el estudiante y lo que conduce el tribunal. <em>Anexo I y II — Proyecto institucional 2026.</em></p>
 
     <nav class="nav" role="tablist" aria-label="Secciones">
       <button role="tab" id="nav-proyecto" data-vista="proyecto" aria-selected="true" aria-controls="vista-proyecto">El proyecto</button>
@@ -463,7 +471,7 @@ footer .sig{font-family:var(--f-mono); font-size:10.5px; letter-spacing:.06em; t
 
 <section class="banco" id="banco" hidden>
   <div class="wrap">
-    <h2>Banco Oficial — 40 tarjetas, 6 ejes temáticos y tarjetas transversales</h2>
+    <h2>Banco Oficial — 53 tarjetas en ocho ejes temáticos y trece transversales. El color identifica la familia temática; la letra, el eje</h2>
     <div id="grupos"></div>
   </div>
 </section>
@@ -474,7 +482,7 @@ footer .sig{font-family:var(--f-mono); font-size:10.5px; letter-spacing:.06em; t
 <section id="vista-proyecto" role="tabpanel" aria-labelledby="nav-proyecto">
 
   <p class="lede">Física I reemplaza el sistema de preguntas aleatorias, de tema al azar del programa o de examen consensuado entre los profesores por una matriz estructurada de tarjetas. En lugar de sortear un tema del programa y pedir que se exponga, ahora se sortea una <strong>situación física real de la ingeniería</strong> y se evalúa qué puede hacer el estudiante con ella: si la entiende, si la sabe modelizar, si la conecta con el resto del programa y si la sabe explicar.</p>
-  <p class="lede-2">Esta pantalla es el dispositivo de consulta de ese banco: permite ver, para cualquiera de las 40 tarjetas, exactamente qué recibe el estudiante y exactamente con qué la evalúa el tribunal.</p>
+  <p class="lede-2">Esta pantalla es el dispositivo de consulta de ese banco: permite ver, para cualquiera de las 53 tarjetas, exactamente qué recibe el estudiante y exactamente con qué la evalúa el tribunal.</p>
 
   <section class="blk">
     <h2>Qué cambia respecto del sistema anterior</h2>
@@ -492,7 +500,7 @@ footer .sig{font-family:var(--f-mono); font-size:10.5px; letter-spacing:.06em; t
         <span class="ad-tag">Dispositivo actual</span>
         <ul>
           <li>Se sortea una situación física contextualizada en un problema de ingeniería.</li>
-          <li>Las 40 tarjetas están construidas sobre la misma estructura y la misma rúbrica.</li>
+          <li>Las 53 tarjetas están construidas sobre la misma estructura y la misma rúbrica.</li>
           <li>Cada unidad del programa tiene presencia garantizada en el banco.</li>
           <li>Cada tarjeta trae sus preguntas guía escritas de antemano.</li>
         </ul>
@@ -510,14 +518,14 @@ footer .sig{font-family:var(--f-mono); font-size:10.5px; letter-spacing:.06em; t
 
   <section class="blk">
     <h2>Qué contiene el banco</h2>
-    <p class="blk-intro">Cuarenta tarjetas: cinco por cada eje temático del programa analítico, más diez tarjetas transversales que obligan a integrar varias unidades a la vez.</p>
+    <p class="blk-intro">Cincuenta y tres tarjetas: cinco por cada uno de los ocho ejes del programa analítico, más trece transversales que obligan a integrar varias unidades a la vez. Los ejes se agrupan en cuatro familias temáticas y el color identifica la familia, no el eje: con nueve ejes, nueve colores distintos dejan de ser distinguibles con seguridad.</p>
     <ul class="ejes-exp" id="ejes-exp"></ul>
     <p class="nota-blk">Cada tarjeta lleva la situación física, los temas del programa que toca, los resultados de aprendizaje a verificar, cinco preguntas guía y una pregunta integradora obligatoria de un eje distinto al suyo.</p>
   </section>
 
   <section class="blk">
     <h2>Cómo se califica</h2>
-    <p class="blk-intro">Una rúbrica única de 10 puntos, igual para las 40 tarjetas, repartida en cuatro criterios. El peso de cada uno dice qué se está evaluando realmente.</p>
+    <p class="blk-intro">Una rúbrica única de 10 puntos, igual para las 53 tarjetas, repartida en cuatro criterios. El peso de cada uno dice qué se está evaluando realmente.</p>
     <div class="rub-meter" id="rub-meter"></div>
     <ul class="rub-leyenda" id="rub-leyenda"></ul>
     <p class="nota-blk">Comprensión conceptual y modelización física suman 7 de los 10 puntos: el examen premia entender y saber plantear, no recitar. La integración temática se verifica con la pregunta obligatoria de otro eje, y la comunicación técnica se pondera sobre el conjunto de la exposición.</p>
@@ -529,7 +537,7 @@ footer .sig{font-family:var(--f-mono); font-size:10.5px; letter-spacing:.06em; t
       <div class="uso-item">
         <span class="uso-n">1</span>
         <div>
-          <b>Elegí una tarjeta.</b> <em>Sortear tarjeta</em> entrega una al azar, como en la mesa real. <em>Explorar banco</em> abre las 40 agrupadas por eje para ir a una en particular.
+          <b>Elegí una tarjeta.</b> <em>Sortear tarjeta</em> entrega una al azar, como en la mesa real. <em>Explorar banco</em> abre las 53 agrupadas por eje para ir a una en particular.
         </div>
       </div>
       <div class="uso-item">
@@ -556,7 +564,7 @@ footer .sig{font-family:var(--f-mono); font-size:10.5px; letter-spacing:.06em; t
 
   <section class="blk blk-estado">
     <h2>Estado del contenido y marco normativo</h2>
-    <p>Las 40 tarjetas, sus ejes y sus temas provienen del Anexo I del proyecto institucional elevado al Consejo Departamental de Materias Básicas. Los enunciados de situación, los resultados de aprendizaje y las preguntas guía son un <strong>borrador de trabajo</strong> elaborado para este dispositivo: requieren revisión y aprobación de la cátedra antes de constituir el Banco Oficial definitivo.</p>
+    <p>Las tarjetas T-01 a T-40, sus ejes y sus temas provienen del Anexo I del proyecto institucional elevado al Consejo Departamental de Materias Básicas. Los enunciados de situación, los resultados de aprendizaje y las preguntas guía son un <strong>borrador de trabajo</strong> elaborado para este dispositivo: requieren revisión y aprobación de la cátedra antes de constituir el Banco Oficial definitivo.</p>
     <p>El protocolo se apoya en el PAAA Física I 2026, en el artículo 7.2.2 de la Ordenanza 1549 —que define la condición de regularidad— y en el modelo de evaluación por competencias de la Universidad Tecnológica Nacional. La rúbrica y la Ficha Individual de Evaluación (código FI-F1-01, versión 1.0) constituyen el Anexo II del mismo proyecto.</p>
   </section>
 </section>
@@ -646,8 +654,8 @@ footer .sig{font-family:var(--f-mono); font-size:10.5px; letter-spacing:.06em; t
 </section>
 
   <footer>
-    <p><b>Estado del contenido.</b> Las 40 tarjetas, sus ejes y sus temas provienen del Anexo I del proyecto institucional. Los enunciados de situación, los resultados de aprendizaje, las preguntas guía y las preguntas integradoras son un borrador de trabajo elaborado para este dispositivo: requieren revisión y aprobación de la cátedra antes de constituir el Banco Oficial.</p>
-    <p><b>Observación sobre el Anexo I.</b> El proyecto asigna color amarillo tanto al Eje C (Energía) como al Eje D (Cantidad de Movimiento). Aquí se diferencian para preservar la función del código cromático; corresponde a la cátedra definir el color definitivo del Eje D.</p>
+    <p><b>Estado del contenido.</b> Las tarjetas T-01 a T-40, sus ejes y sus temas provienen del Anexo I del proyecto institucional; las tarjetas T-41 a T-53 cubren estática, elasticidad y movimiento oscilatorio, desarrolladas a partir de los talleres 9, 10 y 11 de la cátedra. Los enunciados de situación, los resultados de aprendizaje, las preguntas guía y las preguntas integradoras son un borrador de trabajo elaborado para este dispositivo: requieren revisión y aprobación de la cátedra antes de constituir el Banco Oficial.</p>
+    <p><b>Sobre el código cromático.</b> El proyecto original asignaba un color por eje y repetía el amarillo en los ejes C y D. Con nueve ejes, nueve colores categóricos no se distinguen de manera confiable, en particular bajo daltonismo. El color pasa a identificar la familia temática (cuatro familias más las transversales) y la identificación del eje queda a cargo de la letra y del nombre, presentes en todas las tarjetas. La paleta está verificada para visión normal y para los tres tipos de daltonismo.</p>
     <p class="sig">San Rafael, Mendoza — Cátedra de Física I — Departamento de Materias Básicas — UTN FRSR</p>
   </footer>
 </main>
@@ -657,15 +665,32 @@ footer .sig{font-family:var(--f-mono); font-size:10.5px; letter-spacing:.06em; t
    UTN Facultad Regional San Rafael — Departamento de Materias Básicas
    Contenido de situaciones y preguntas guía: borrador para revisión de cátedra. */
 
-const EJES = {
-  A: { nombre: "Modelización y Cinemática", color: "#2E5C8A", tag: "Eje A" },
-  B: { nombre: "Dinámica",                  color: "#3D7A54", tag: "Eje B" },
-  C: { nombre: "Energía",                   color: "#B08A2E", tag: "Eje C" },
-  D: { nombre: "Cantidad de Movimiento",    color: "#C2662D", tag: "Eje D" },
-  E: { nombre: "Rotación",                  color: "#7A5C42", tag: "Eje E" },
-  F: { nombre: "Fluidos",                   color: "#6B4E8C", tag: "Eje F" },
-  T: { nombre: "Transversales PAAA 2026",   color: "#9B3232", tag: "Transversal" }
+/* Familias temáticas: el color identifica la familia, la letra identifica el eje.
+   Paleta validada en OKLab — separación entre familias ΔE >= 15 en visión normal
+   y >= 8 bajo protanopía, deuteranopía y tritanopía, con contraste suficiente
+   sobre papel, sobre fondo oscuro y para texto blanco sobre la banda impresa. */
+const FAMILIAS = {
+  P: { nombre: "Mecánica del punto material",     claro: "#45709C", oscuro: "#4A76A2" },
+  K: { nombre: "Principios de conservación",      claro: "#004F48", oscuro: "#63B4AB" },
+  X: { nombre: "Sistemas extensos",               claro: "#855800", oscuro: "#F2C064" },
+  M: { nombre: "Medios continuos y oscilaciones", claro: "#5D317F", oscuro: "#CA9CF3" },
+  I: { nombre: "Integración",                     claro: "#6E0C14", oscuro: "#B65350" }
 };
+
+const EJES = {
+  A: { nombre: "Modelización y Cinemática", familia: "P", tag: "Eje A" },
+  B: { nombre: "Dinámica",                  familia: "P", tag: "Eje B" },
+  C: { nombre: "Energía",                   familia: "K", tag: "Eje C" },
+  D: { nombre: "Cantidad de Movimiento",    familia: "K", tag: "Eje D" },
+  E: { nombre: "Rotación",                  familia: "X", tag: "Eje E" },
+  G: { nombre: "Estática y Elasticidad",    familia: "X", tag: "Eje G" },
+  F: { nombre: "Fluidos",                   familia: "M", tag: "Eje F" },
+  H: { nombre: "Movimiento Oscilatorio",    familia: "M", tag: "Eje H" },
+  T: { nombre: "Transversales PAAA 2026",   familia: "I", tag: "Transversal" }
+};
+
+/* orden de presentación: los ejes de una misma familia van juntos */
+const ORDEN_EJES = ["A","B","C","D","E","G","F","H","T"];
 
 const RUBRICA = [
   { id: "conceptual", criterio: "Comprensión conceptual", puntaje: 4,
@@ -1287,9 +1312,199 @@ const TARJETAS = [
     { c: "integracion", t: "Evaluá la propuesta del área de energía: ¿es físicamente viable recuperar energía en el descenso? ¿Qué la limita?" }
   ],
   integradora: { eje: "A", t: "Describí el movimiento de la carga durante el traslado horizontal con arranque y frenado, y esquematizá su gráfico v-t." }
+},
+
+/* ──────────────────── EJE G — Estática y Elasticidad ──────────────────── */
+{
+  id: "T-41", eje: "G", titulo: "Armadura de sostén de cartel vial",
+  temas: ["Equilibrio de cuerpo rígido", "Diagrama de cuerpo libre", "Reacciones de vínculo"],
+  situacion: "Un cartel de señalización de 1000 kgf cuelga del extremo de un puntal horizontal articulado a una columna. Un cable inclinado une ese extremo con un punto más alto de la columna. El proyectista debe especificar el cable por su carga de rotura y el pivote por la fuerza que debe soportar, y advierte que la fuerza sobre el pivote no coincide ni en módulo ni en dirección con el peso del cartel.",
+  resultados: ["Aplicar las dos condiciones de equilibrio de un cuerpo rígido", "Construir diagramas de cuerpo libre y determinar reacciones de vínculo"],
+  preguntas: [
+    { c: "conceptual", t: "Enunciá las dos condiciones de equilibrio de un cuerpo rígido. ¿Por qué la de fuerzas no alcanza y qué situación física queda sin describir si se omite la de momentos?" },
+    { c: "conceptual", t: "¿Qué diferencia hay entre una articulación y un apoyo simple en cuanto a las componentes de reacción que pueden transmitir? ¿Por qué el cable solo puede trabajar a tracción?" },
+    { c: "modelizacion", t: "Trazá el diagrama de cuerpo libre del puntal. Elegí el punto respecto del cual tomar momentos y justificá por qué esa elección simplifica el sistema de ecuaciones." },
+    { c: "modelizacion", t: "¿Qué hipótesis estás adoptando sobre el peso propio del puntal y sobre la rigidez de la columna? ¿En qué caso dejarían de ser razonables?" },
+    { c: "integracion", t: "El puntal trabaja a compresión y el cable a tracción. Explicá qué propiedad del material limita a cada uno y por qué no es la misma." }
+  ],
+  integradora: { eje: "E", t: "Si el cartel se desplaza hacia el extremo del puntal, ¿cómo cambia el momento respecto del pivote y qué consecuencia tiene sobre la tensión del cable?" }
+},
+{
+  id: "T-42", eje: "G", titulo: "Balanza de brazos desiguales",
+  temas: ["Momento de una fuerza", "Centro de gravedad", "Error sistemático de medición"],
+  situacion: "Una balanza de platillos tiene el eje de giro fuera del punto medio de la barra, defecto que el operario desconoce. Al pesar una misma pieza en el platillo izquierdo obtiene un valor y al pesarla en el derecho obtiene otro distinto. Metrología sostiene que, pese al defecto, con esas dos lecturas se puede determinar la masa verdadera sin reparar el instrumento.",
+  resultados: ["Aplicar el equilibrio de momentos a un instrumento de medición", "Identificar y corregir un error sistemático mediante un procedimiento experimental"],
+  preguntas: [
+    { c: "conceptual", t: "Definí momento de una fuerza y explicá por qué una balanza de brazos iguales compara masas sin necesidad de conocer el valor de la gravedad." },
+    { c: "modelizacion", t: "Planteá la condición de equilibrio para cada una de las dos pesadas, nombrando las longitudes de ambos brazos como incógnitas." },
+    { c: "modelizacion", t: "Combiná las dos ecuaciones y demostrá que la masa verdadera es la media geométrica de las dos lecturas. ¿Por qué desaparecen las longitudes de los brazos?" },
+    { c: "conceptual", t: "Distinguí centro de masa de centro de gravedad. ¿Bajo qué condición coinciden y por qué el centro de gravedad puede quedar fuera del cuerpo?" },
+    { c: "comunicacion", t: "Redactá en una frase técnicamente precisa el procedimiento de medición que corrige el defecto, como instrucción para el operario." }
+  ],
+  integradora: { eje: "A", t: "Si el platillo oscila antes de detenerse, ¿qué tipo de movimiento describe y de qué depende el tiempo que tarda en estabilizarse?" }
+},
+{
+  id: "T-43", eje: "G", titulo: "Cable de izaje de una fresadora",
+  temas: ["Esfuerzo y deformación", "Módulo de Young", "Alargamiento"],
+  situacion: "Una varilla de acero de 2 m de longitud y 0,30 cm² de sección sostiene una fresadora de 550 kg. El área de mantenimiento mide el alargamiento y lo compara con el de un cable de nailon de igual sección que sostiene la misma carga: el nailon se estira varias decenas de veces más. Ambos materiales están dentro de su rango elástico.",
+  resultados: ["Vincular esfuerzo, deformación unitaria y módulo de Young", "Interpretar el módulo de Young como propiedad del material y no de la pieza"],
+  preguntas: [
+    { c: "conceptual", t: "Definí esfuerzo y deformación unitaria. ¿Qué unidades tiene cada uno y por qué la deformación unitaria es adimensional?" },
+    { c: "conceptual", t: "Enunciá la ley de Hooke en términos de esfuerzo y deformación. ¿Qué representa físicamente el módulo de Young y de qué depende?" },
+    { c: "modelizacion", t: "Deducí la expresión del alargamiento en función de la carga, la longitud, la sección y el módulo. ¿Por qué el alargamiento depende de la longitud inicial pero la deformación unitaria no?" },
+    { c: "modelizacion", t: "Un operario afirma que el nailon se estira más porque tiene mayor módulo de Young. Corregí la afirmación y explicá el error conceptual." },
+    { c: "integracion", t: "Si se duplica la sección del cable manteniendo la carga, ¿qué ocurre con el esfuerzo, con la deformación y con el alargamiento?" }
+  ],
+  integradora: { eje: "B", t: "Durante el arranque del izaje la carga acelera. Planteá el diagrama de cuerpo libre e indicá cómo cambia el esfuerzo en la varilla respecto del caso estático." }
+},
+{
+  id: "T-44", eje: "G", titulo: "Gancho de izaje deformado",
+  temas: ["Límite elástico", "Rango de validez de la ley de Hooke", "Deformación plástica"],
+  situacion: "Un gancho de izaje sometido a una sobrecarga quedó visiblemente abierto y no recuperó su forma al retirar la carga. El responsable de seguridad ordena descartarlo. El encargado del taller objeta que el acero es un material elástico y que, por lo tanto, debería haber vuelto a su forma original.",
+  resultados: ["Reconocer los límites de validez del modelo elástico lineal", "Distinguir comportamiento elástico de comportamiento plástico"],
+  preguntas: [
+    { c: "conceptual", t: "¿Qué significa que un material sea elástico? Resolvé la objeción del encargado: ¿es correcto decir que el acero es elástico y por eso debe recuperar su forma?" },
+    { c: "conceptual", t: "¿La ley de Hooke vale para cualquier nivel de esfuerzo? Describí las zonas de la curva esfuerzo-deformación y señalá dónde deja de valer." },
+    { c: "modelizacion", t: "Definí límite elástico y esfuerzo de rotura. ¿Cuál de los dos fue superado en este caso y cómo lo deducís de la evidencia disponible?" },
+    { c: "modelizacion", t: "¿Qué hipótesis del modelo elástico lineal se cae cuando aparece deformación permanente? ¿Sigue siendo válido el módulo de Young para predecir el comportamiento posterior de la pieza?" },
+    { c: "integracion", t: "Fundamentá técnicamente la decisión del responsable de seguridad, más allá de la deformación visible." }
+  ],
+  integradora: { eje: "C", t: "¿Qué ocurrió con el trabajo realizado por la sobrecarga sobre el gancho? ¿Se recuperó al retirarla? Relacionalo con el balance energético." }
+},
+{
+  id: "T-45", eje: "G", titulo: "Aceite de un sistema hidráulico de alta presión",
+  temas: ["Deformación volumétrica", "Módulo volumétrico", "Compresibilidad"],
+  situacion: "Un sistema hidráulico contiene 250 litros de aceite y opera a presiones del orden de 160 atmósferas. El proyectista lo calcula suponiendo el fluido incompresible, pero el área de control advierte que el volumen efectivamente disminuye y que ese cambio explica parte del retardo en la respuesta de los actuadores.",
+  resultados: ["Aplicar el concepto de deformación volumétrica a un fluido confinado", "Evaluar la validez de la hipótesis de incompresibilidad"],
+  preguntas: [
+    { c: "conceptual", t: "Definí deformación volumétrica y módulo volumétrico. ¿Por qué la deformación volumétrica es negativa cuando el cuerpo se comprime?" },
+    { c: "conceptual", t: "¿Es cierto que los líquidos y los gases no cambian de volumen bajo presión? Distinguí entre ambos y explicá en qué sentido la incompresibilidad es una aproximación y no una propiedad." },
+    { c: "modelizacion", t: "Planteá la relación entre variación de presión, módulo volumétrico y variación relativa de volumen, y estimá el orden de magnitud de la disminución en este sistema." },
+    { c: "modelizacion", t: "Definí compresibilidad y explicá su relación con el módulo volumétrico. ¿Por qué conviene una u otra magnitud según el problema?" },
+    { c: "integracion", t: "Explicá por qué la compresibilidad del aceite se traduce en retardo de respuesta del actuador, y por qué el aire atrapado en el circuito agrava el efecto." }
+  ],
+  integradora: { eje: "F", t: "Enunciá el principio de Pascal y explicá qué hipótesis sobre el fluido requiere para ser aplicable tal como se lo usa en una prensa hidráulica." }
+},
+
+/* ──────────────────── EJE H — Movimiento Oscilatorio ──────────────────── */
+{
+  id: "T-46", eje: "H", titulo: "Balanza de resorte de pesaje industrial",
+  temas: ["Movimiento armónico simple", "Período y frecuencia", "Sistema masa-resorte"],
+  situacion: "Una balanza de resorte de una línea de empaque registra de 0 a 16 kgf sobre una escala de 15 cm. Al colgar una pieza, el conjunto oscila verticalmente alrededor de la posición de equilibrio y el operario debe esperar a que se detenga para leer. Ingeniería propone determinar el peso a partir de la frecuencia de esa oscilación, sin esperar.",
+  resultados: ["Caracterizar el movimiento armónico simple de un sistema masa-resorte", "Vincular período, masa y constante elástica"],
+  preguntas: [
+    { c: "conceptual", t: "Distinguí movimiento periódico de movimiento armónico simple. ¿Qué condición debe cumplir la fuerza para que el movimiento sea armónico simple?" },
+    { c: "conceptual", t: "En un movimiento armónico simple, ¿qué relación hay entre la aceleración y el desplazamiento? ¿En qué punto la velocidad es máxima y en cuál lo es la aceleración?" },
+    { c: "modelizacion", t: "Deducí la constante elástica del resorte a partir del rango y la longitud de la escala, y planteá la relación entre período, masa y constante." },
+    { c: "modelizacion", t: "¿Por qué el período no depende de la amplitud con que se haya tirado de la pieza? ¿Qué hipótesis del modelo sostiene esa independencia?" },
+    { c: "integracion", t: "Evaluá la propuesta de ingeniería: ¿es físicamente válido pesar midiendo la frecuencia? ¿Qué ventaja operativa tendría y qué la limita?" }
+  ],
+  integradora: { eje: "G", t: "El resorte obedece la ley de Hooke. Relacioná su constante elástica con el módulo de Young del material y la geometría del alambre." }
+},
+{
+  id: "T-47", eje: "H", titulo: "Montaje elástico de una máquina",
+  temas: ["Constante elástica equivalente", "Resortes en serie y en paralelo"],
+  situacion: "Una máquina se apoya sobre un conjunto de resortes. El proyectista evalúa tres montajes con los mismos elementos: los resortes en paralelo bajo la base, en serie uno a continuación del otro, y una combinación de ambos. La frecuencia propia del conjunto cambia en cada caso, y además dispone de resortes que puede cortar a la mitad.",
+  resultados: ["Determinar la constante elástica equivalente de asociaciones de resortes", "Relacionar la rigidez del montaje con la frecuencia propia del sistema"],
+  preguntas: [
+    { c: "conceptual", t: "Explicá qué magnitud se reparte y cuál es común en una asociación en paralelo, y cuál en una asociación en serie. Deducí de ahí cada constante equivalente." },
+    { c: "conceptual", t: "¿Qué montaje da el conjunto más rígido y cuál el más flexible? Justificá sin calcular, razonando sobre el desplazamiento de la base." },
+    { c: "modelizacion", t: "Si un resorte de constante k se corta exactamente a la mitad, ¿cuál es la constante de cada mitad? Fundamentá a partir de la deformación por unidad de longitud." },
+    { c: "modelizacion", t: "Planteá la frecuencia propia del conjunto en función de la masa de la máquina y de la constante equivalente, explicitando las hipótesis adoptadas." },
+    { c: "integracion", t: "Si la máquina genera vibraciones de frecuencia conocida, ¿conviene que la frecuencia propia del montaje sea mayor, menor o igual? Fundamentá." }
+  ],
+  integradora: { eje: "D", t: "Explicá cómo un montaje elástico reduce la fuerza máxima transmitida a la fundación, usando el teorema del impulso." }
+},
+{
+  id: "T-48", eje: "H", titulo: "Péndulo de una grúa en maniobra",
+  temas: ["Péndulo simple", "Aproximación de pequeñas oscilaciones", "Período"],
+  situacion: "La carga suspendida de una grúa torre oscila como un péndulo cuando el operador detiene el giro. El manual indica un período que depende solo de la longitud del cable, y el operador comprueba que se cumple con buena aproximación en oscilaciones pequeñas pero falla cuando la carga parte de un ángulo grande.",
+  resultados: ["Modelizar un péndulo simple y reconocer el rango de validez de la aproximación armónica", "Distinguir movimiento periódico de movimiento armónico simple en un caso real"],
+  preguntas: [
+    { c: "conceptual", t: "¿Es el péndulo simple un movimiento armónico simple en general? Justificá a partir de la forma de la fuerza recuperadora." },
+    { c: "modelizacion", t: "Planteá el diagrama de cuerpo libre de la carga en una posición genérica e identificá la componente que actúa como fuerza recuperadora." },
+    { c: "modelizacion", t: "¿Qué aproximación matemática se introduce para obtener el período clásico y a partir de qué ángulo deja de ser aceptable? Explicá el error que se comete." },
+    { c: "conceptual", t: "¿Por qué el período no depende de la masa de la carga? ¿Y de la amplitud, dentro de la aproximación?" },
+    { c: "integracion", t: "El operador quiere reducir el tiempo de oscilación para encadenar maniobras. ¿Qué variable puede modificar realmente y cuál no?" }
+  ],
+  integradora: { eje: "C", t: "Describí la transformación entre energía cinética y potencial a lo largo de una oscilación completa e indicá dónde es máxima cada una." }
+},
+{
+  id: "T-49", eje: "H", titulo: "Energía de un sistema vibrante",
+  temas: ["Energía en el MAS", "Conservación", "Amplitud"],
+  situacion: "Un ensayo de vibración somete una probeta montada sobre un resorte a un movimiento armónico simple de amplitud controlada. El laboratorio debe informar la energía del ensayo. Un técnico sostiene que al duplicar la amplitud se duplica la energía, y otro afirma que, fijada la amplitud, una probeta más pesada almacena más energía.",
+  resultados: ["Analizar el balance energético del movimiento armónico simple", "Interpretar dependencias funcionales de la energía con amplitud y masa"],
+  preguntas: [
+    { c: "conceptual", t: "Describí cómo se reparten energía cinética y potencial elástica a lo largo de un ciclo. ¿En qué puntos cada una es máxima y cuánto vale la otra allí?" },
+    { c: "conceptual", t: "¿Es constante la energía total del oscilador? ¿Bajo qué condición y qué la haría dejar de serlo?" },
+    { c: "modelizacion", t: "Planteá la energía total en función de la constante elástica y la amplitud. Corregí la afirmación del primer técnico sobre duplicar la amplitud." },
+    { c: "modelizacion", t: "Evaluá la afirmación del segundo técnico: a amplitud dada, ¿la energía total depende de la masa? Fundamentá desde la expresión obtenida." },
+    { c: "integracion", t: "Si la masa cambia pero la energía del ensayo debe mantenerse, ¿qué variable hay que ajustar? ¿Y qué ocurre con la frecuencia?" }
+  ],
+  integradora: { eje: "B", t: "Planteá la Segunda Ley de Newton para la masa del oscilador y mostrá de dónde sale la frecuencia propia del sistema." }
+},
+{
+  id: "T-50", eje: "H", titulo: "Transportador vibratorio",
+  temas: ["MAS y rozamiento", "Aceleración máxima", "Amplitud límite"],
+  situacion: "Un transportador vibratorio desplaza piezas sobre una bandeja horizontal que oscila con movimiento armónico simple de 2 Hz. El coeficiente de rozamiento estático entre pieza y bandeja es 0,5. Producción quiere aumentar la amplitud para acelerar el avance, pero por encima de cierto valor las piezas deslizan y el proceso pierde precisión.",
+  resultados: ["Acoplar el modelo de movimiento armónico simple con la condición de rozamiento estático", "Determinar un límite de diseño a partir de dos modelos físicos simultáneos"],
+  preguntas: [
+    { c: "conceptual", t: "¿En qué punto del recorrido la aceleración de la bandeja es máxima y cuánto vale en función de la amplitud y la frecuencia angular?" },
+    { c: "modelizacion", t: "Trazá el diagrama de cuerpo libre de una pieza apoyada sobre la bandeja. ¿Qué fuerza es la única capaz de acelerarla horizontalmente?" },
+    { c: "modelizacion", t: "Planteá la condición límite de no deslizamiento y deducí la amplitud máxima admisible en función de la frecuencia y el coeficiente de rozamiento." },
+    { c: "conceptual", t: "¿Por qué la masa de la pieza no aparece en el resultado? ¿Qué implicancia práctica tiene para un transportador que mueve piezas distintas?" },
+    { c: "integracion", t: "Si en lugar de aumentar la amplitud se aumentara la frecuencia, ¿el problema mejora o empeora? Justificá desde la expresión obtenida." }
+  ],
+  integradora: { eje: "A", t: "Escribí la posición de la bandeja en función del tiempo y obtené por derivación su velocidad y su aceleración." }
+},
+
+/* ─────────── TRANSVERSALES NUEVAS — PAAA 2026 ─────────── */
+{
+  id: "T-51", eje: "T", titulo: "Suspensión de un vehículo",
+  temas: ["Oscilaciones", "Dinámica", "Energía"],
+  integra: ["B", "C", "H"],
+  situacion: "La suspensión de un vehículo combina un resorte y un amortiguador. Sin amortiguador el vehículo sigue oscilando mucho después de pasar un badén; con un amortiguador demasiado rígido transmite el golpe completo al habitáculo. El fabricante debe elegir un punto intermedio y justificarlo ante el área de confort y ante la de seguridad, que piden cosas distintas.",
+  resultados: ["Integrar oscilaciones, dinámica y energía en el análisis de un sistema real", "Justificar un compromiso de diseño a partir de más de un criterio físico"],
+  preguntas: [
+    { c: "conceptual", t: "Describí la función física del resorte y la del amortiguador. ¿Cuál almacena energía y cuál la disipa?" },
+    { c: "conceptual", t: "¿Qué es la frecuencia propia de la suspensión y de qué depende? ¿Por qué interesa que sea distinta de la frecuencia con que llegan las irregularidades del camino?" },
+    { c: "modelizacion", t: "Planteá el diagrama de cuerpo libre de la masa suspendida y escribí la ecuación de Newton incluyendo la fuerza elástica y la fuerza disipativa." },
+    { c: "modelizacion", t: "¿Qué hipótesis adoptás al tratar la rueda y el neumático como parte de la masa suspendida? ¿Cuándo dejaría de ser razonable?" },
+    { c: "integracion", t: "Explicá por qué confort y seguridad piden amortiguamientos distintos, y qué magnitud física está en tensión entre ambos criterios." }
+  ],
+  integradora: { eje: "D", t: "Analizá el paso por el badén desde el teorema del impulso: ¿qué logra el amortiguador sobre la fuerza máxima transmitida?" }
+},
+{
+  id: "T-52", eje: "T", titulo: "Péndulo de torsión de un ensayo de materiales",
+  temas: ["Rotación", "Elasticidad", "Oscilaciones"],
+  integra: ["E", "G", "H"],
+  situacion: "Una esfera sólida de 8 kg y 15 cm de radio cuelga de un alambre vertical. Se requiere un momento conocido para girarla un ángulo de un radián, y al soltarla oscila en torsión con período constante. El laboratorio usa este dispositivo para determinar propiedades elásticas del alambre y, alternativamente, el momento de inercia de cuerpos de forma irregular.",
+  resultados: ["Integrar magnitudes rotacionales, elásticas y oscilatorias en un mismo dispositivo", "Transferir el modelo del oscilador armónico al dominio rotacional"],
+  preguntas: [
+    { c: "conceptual", t: "Establecé el paralelismo completo entre el oscilador masa-resorte y el péndulo de torsión: qué magnitud rotacional ocupa el lugar de la masa y cuál el de la constante elástica." },
+    { c: "modelizacion", t: "Planteá la ecuación del movimiento angular y deducí el período en función del momento de inercia y de la constante de torsión del alambre." },
+    { c: "conceptual", t: "Definí momento de inercia y explicá por qué, para la misma masa, una esfera maciza y un casquete esférico dan períodos distintos." },
+    { c: "modelizacion", t: "El dispositivo permite dos usos: medir la constante de torsión del alambre o medir el momento de inercia de un cuerpo. Explicá qué hay que conocer de antemano en cada caso." },
+    { c: "integracion", t: "Integrá los tres ejes: señalá qué aporta rotación, qué elasticidad y qué oscilaciones al funcionamiento del ensayo." }
+  ],
+  integradora: { eje: "C", t: "Describí la transformación energética a lo largo de una oscilación de torsión e indicá dónde se almacena la energía potencial." }
+},
+{
+  id: "T-53", eje: "T", titulo: "Pasarela peatonal sometida a resonancia",
+  temas: ["Estática", "Elasticidad", "Oscilaciones"],
+  integra: ["B", "G", "H"],
+  situacion: "Una pasarela peatonal verificada con holgura para las cargas estáticas reglamentarias entró en oscilaciones laterales perceptibles el día de su inauguración, con la estructura muy por debajo de su carga máxima. Los peatones, al sentir el movimiento, acompasaron el paso, y la amplitud creció. El cálculo estático no había anticipado nada de esto.",
+  resultados: ["Reconocer los límites de una verificación puramente estática", "Integrar equilibrio, deformación y comportamiento dinámico de una estructura"],
+  preguntas: [
+    { c: "conceptual", t: "¿Qué verifica un cálculo estático y qué fenómeno queda expresamente fuera de su alcance? Explicá por qué una estructura segura a carga máxima puede resultar inadmisible en servicio." },
+    { c: "conceptual", t: "Definí frecuencia propia y resonancia. ¿Por qué una excitación pequeña y sostenida puede producir amplitudes grandes?" },
+    { c: "modelizacion", t: "Modelizá la pasarela como un oscilador de un grado de libertad. ¿Qué representan la masa y la rigidez equivalentes, y cómo se vincula esa rigidez con el módulo elástico del material?" },
+    { c: "modelizacion", t: "¿Qué hipótesis del modelo estático se caen cuando la carga es móvil y rítmica en lugar de constante?" },
+    { c: "integracion", t: "El acompasamiento de los peatones realimenta la oscilación. Explicá por qué esto agrava el fenómeno y qué tipo de solución lo corrige sin agregar material estructural." }
+  ],
+  integradora: { eje: "D", t: "Cada paso de un peatón transfiere cantidad de movimiento lateral a la estructura. Planteá cómo una sucesión de impulsos en fase produce amplitudes crecientes." }
 }
 ];
-
 </script>
 <script>
 (function(){
@@ -1304,13 +1519,18 @@ const TARJETAS = [
   let scores = {};
 
   /* ── banco ── */
-  const orden = ["A","B","C","D","E","F","T"];
+  const orden = ORDEN_EJES;
+  let famPrevia = null;
   $("#grupos").innerHTML = orden.map(k=>{
     const e = EJES[k];
     const items = TARJETAS.filter(t=>t.eje===k).map(t=>
       `<button class="chip" data-id="${t.id}" aria-current="false"><code>${t.id}</code><span>${t.titulo}</span></button>`
     ).join("");
-    return `<div class="ejegroup" data-eje="${k}">
+    const abreFamilia = e.familia !== famPrevia;
+    famPrevia = e.familia;
+    const cabFam = abreFamilia
+      ? `<div class="famhead" data-eje="${k}"><span class="famrail"></span>${FAMILIAS[e.familia].nombre}</div>` : "";
+    return `${cabFam}<div class="ejegroup" data-eje="${k}">
       <div class="ejehead"><span class="n">${e.tag}</span><span class="t">${e.nombre}</span></div>
       <div class="chips">${items}</div>
     </div>`;
@@ -1501,10 +1721,15 @@ const TARJETAS = [
         <span class="d">${p.durTexto}</span>
       </li>`).join("");
 
-    $("#ejes-exp").innerHTML = ["A","B","C","D","E","F","T"].map(k=>{
+    let fPrev = null;
+    $("#ejes-exp").innerHTML = ORDEN_EJES.map(k=>{
       const e = EJES[k], n = TARJETAS.filter(t=>t.eje===k).length;
       const nombre = k==="T" ? "Transversales — integran varias unidades" : e.nombre;
-      return `<li data-eje="${k}">
+      const abre = e.familia !== fPrev; fPrev = e.familia;
+      const cab = abre
+        ? `<li class="famsep" data-eje="${k}"><span class="rail"></span><span class="nm">${FAMILIAS[e.familia].nombre}</span><span class="ct"></span></li>`
+        : "";
+      return `${cab}<li data-eje="${k}">
         <span class="rail"></span>
         <span class="nm"><small>${e.tag}</small>${nombre}</span>
         <span class="ct">${n} tarjetas</span>
@@ -1589,5 +1814,6 @@ const TARJETAS = [
   });
 })();
 </script>
+
 </body>
 </html>
